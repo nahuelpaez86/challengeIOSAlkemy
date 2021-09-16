@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="18122" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="18093"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="QuestionViewController" customModule="TutorialApp" customModuleProvider="target">
+            <connections>
+                <outlet property="LabelMain" destination="nxv-kp-3wh" id="5AH-CS-SfC"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="RAMDON" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dpN-vU-pWo">
+                    <rect key="frame" x="40" y="74" width="334" height="20.5"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Si el dolor se va la inflamacion vuelve ?" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="nxv-kp-3wh">
+                    <rect key="frame" x="13" y="294.5" width="361" height="24"/>
+                    <fontDescription key="fontDescription" type="boldSystem" pointSize="20"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="eNI-nj-KQT">
+                    <rect key="frame" x="70" y="530" width="100" height="60"/>
+                    <color key="backgroundColor" systemColor="systemGreenColor"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="60" id="JRo-c9-xYm"/>
+                    </constraints>
+                    <state key="normal" title="Yes">
+                        <color key="titleColor" red="0.8980392157" green="0.96078431369999995" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    </state>
+                    <connections>
+                        <action selector="btnYes:" destination="-1" eventType="touchUpInside" id="adO-Uk-hfR"/>
+                    </connections>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="3KB-y4-v8p">
+                    <rect key="frame" x="258" y="535" width="94" height="55"/>
+                    <color key="backgroundColor" systemColor="systemRedColor"/>
+                    <state key="normal" title="No">
+                        <color key="titleShadowColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    </state>
+                    <connections>
+                        <action selector="btnNo:" destination="-1" eventType="touchUpInside" id="flQ-sg-Fg1"/>
+                    </connections>
+                </button>
+            </subviews>
+            <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
+            <color key="backgroundColor" systemColor="systemTealColor"/>
+            <constraints>
+                <constraint firstItem="eNI-nj-KQT" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="30" id="2e1-Wg-1R7"/>
+                <constraint firstItem="dpN-vU-pWo" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" constant="30" id="7x8-HW-mav"/>
+                <constraint firstItem="nxv-kp-3wh" firstAttribute="top" secondItem="dpN-vU-pWo" secondAttribute="bottom" constant="200" id="94g-QS-lA0"/>
+                <constraint firstItem="dpN-vU-pWo" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="200" id="EW0-y4-Tw9"/>
+                <constraint firstItem="eNI-nj-KQT" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="40" id="L8I-4D-jRW"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="nxv-kp-3wh" secondAttribute="trailing" constant="40" id="Neb-mr-UUu"/>
+                <constraint firstItem="3KB-y4-v8p" firstAttribute="leading" secondItem="eNI-nj-KQT" secondAttribute="trailing" constant="30" id="U6e-Cj-p3D"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="bottom" secondItem="3KB-y4-v8p" secondAttribute="bottom" constant="273" id="Y2R-Rf-vQu"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="dpN-vU-pWo" secondAttribute="trailing" constant="40" id="fh6-V6-lC5"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="bottom" secondItem="eNI-nj-KQT" secondAttribute="bottom" constant="20" id="olR-mG-Wf9"/>
+                <constraint firstItem="3KB-y4-v8p" firstAttribute="leading" secondItem="eNI-nj-KQT" secondAttribute="trailing" constant="40" id="p5o-t2-rLx"/>
+                <constraint firstItem="dpN-vU-pWo" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="40" id="ue4-0U-D0m"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="bottom" secondItem="eNI-nj-KQT" secondAttribute="bottom" constant="272" id="w5g-cC-F8f"/>
+            </constraints>
+            <point key="canvasLocation" x="34.782608695652179" y="81.696428571428569"/>
+        </view>
+    </objects>
+    <resources>
+        <systemColor name="systemGreenColor">
+            <color red="0.20392156862745098" green="0.7803921568627451" blue="0.34901960784313724" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+        <systemColor name="systemRedColor">
+            <color red="1" green="0.23137254901960785" blue="0.18823529411764706" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+        <systemColor name="systemTealColor">
+            <color red="0.35294117647058826" green="0.78431372549019607" blue="0.98039215686274506" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+    </resources>
+</document>

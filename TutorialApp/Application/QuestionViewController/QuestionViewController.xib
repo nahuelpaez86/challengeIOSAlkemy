@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="18122" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="18093"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="QuestionViewController" customModule="TutorialApp" customModuleProvider="target">
+            <connections>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Ramdom" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="YIy-cG-C6g">
+                    <rect key="frame" x="50" y="94" width="314" height="33"/>
+                    <fontDescription key="fontDescription" type="boldSystem" pointSize="27"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Si el dolor se va, la inflamacion no? " textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ZGh-6c-oqn">
+                    <rect key="frame" x="20" y="300" width="343" height="134"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="134" id="wcO-7A-OV7"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="boldSystem" pointSize="21"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="a8J-kk-1jc">
+                    <rect key="frame" x="83" y="597" width="80" height="80"/>
+                    <color key="backgroundColor" systemColor="systemGreenColor"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="80" id="a4b-Ix-qk3"/>
+                        <constraint firstAttribute="width" constant="80" id="aSw-f9-eRx"/>
+                        <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="80" id="mK7-4H-FCd"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="26"/>
+                    <state key="normal" title="Si ">
+                        <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    </state>
+                    <connections>
+                        <action selector="yesBtn:" destination="-1" eventType="touchUpInside" id="gmf-nH-DfU"/>
+                    </connections>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4uS-e0-TTZ">
+                    <rect key="frame" x="249" y="597" width="80" height="80"/>
+                    <color key="backgroundColor" systemColor="systemRedColor"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="80" id="xHZ-G4-JkL"/>
+                        <constraint firstAttribute="height" constant="80" id="xx1-QF-9GN"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="25"/>
+                    <state key="normal" title="No">
+                        <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    </state>
+                    <connections>
+                        <action selector="noBtn:" destination="-1" eventType="touchUpInside" id="eRA-kl-cJf"/>
+                    </connections>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Gwj-T7-2rx">
+                    <rect key="frame" x="326" y="83" width="30" height="40"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    <color key="backgroundColor" systemColor="systemGreenColor"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="23"/>
+                    <state key="normal" title="X"/>
+                    <connections>
+                        <action selector="skip:" destination="-1" eventType="touchUpInside" id="pxj-yM-gqD"/>
+                    </connections>
+                </button>
+            </subviews>
+            <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
+            <color key="backgroundColor" red="0.81521045918367352" green="0.45541060174069631" blue="0.18823529411764706" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="YIy-cG-C6g" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" constant="50" id="7Au-Hb-J5e"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="4uS-e0-TTZ" secondAttribute="trailing" constant="85" id="HLW-oL-CsO"/>
+                <constraint firstItem="a8J-kk-1jc" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="83" id="MkQ-Ms-95Y"/>
+                <constraint firstItem="ZGh-6c-oqn" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="20" id="O5i-6S-EN5"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="YIy-cG-C6g" secondAttribute="trailing" constant="50" id="Vg5-f8-DUP"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="bottom" secondItem="4uS-e0-TTZ" secondAttribute="bottom" constant="185" id="jk8-Uu-Anc"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="bottom" secondItem="ZGh-6c-oqn" secondAttribute="bottom" constant="428" id="oYS-Cx-J3B"/>
+                <constraint firstItem="YIy-cG-C6g" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="50" id="u5q-OY-TPz"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="bottom" secondItem="a8J-kk-1jc" secondAttribute="bottom" constant="185" id="v67-lt-LbD"/>
+            </constraints>
+            <point key="canvasLocation" x="-36.231884057971016" y="108.48214285714285"/>
+        </view>
+    </objects>
+    <resources>
+        <systemColor name="systemGreenColor">
+            <color red="0.20392156862745098" green="0.7803921568627451" blue="0.34901960784313724" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+        <systemColor name="systemRedColor">
+            <color red="1" green="0.23137254901960785" blue="0.18823529411764706" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+    </resources>
+</document>
