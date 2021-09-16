@@ -8,7 +8,6 @@
 
 /* Begin PBXBuildFile section */
 		5245236390433AF44B49CF89 /* Pods_TutorialApp.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CA78A26DB19027CE6C12315B /* Pods_TutorialApp.framework */; };
-		A90E26F626F2939B002F0615 /* ViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A90E26F526F2939B002F0615 /* ViewModel.swift */; };
 		A90E26F826F2A052002F0615 /* model.swift in Sources */ = {isa = PBXBuildFile; fileRef = A90E26F726F2A052002F0615 /* model.swift */; };
 		A90E26FB26F2AB9B002F0615 /* NetworkGet.swift in Sources */ = {isa = PBXBuildFile; fileRef = A90E26FA26F2AB9B002F0615 /* NetworkGet.swift */; };
 		A93593FC26F2501400FAC9EE /* tableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A93593FA26F2501400FAC9EE /* tableViewController.swift */; };
@@ -28,7 +27,6 @@
 
 /* Begin PBXFileReference section */
 		763F4B7093D8BDE65C3D51F9 /* Pods-TutorialApp.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TutorialApp.release.xcconfig"; path = "Target Support Files/Pods-TutorialApp/Pods-TutorialApp.release.xcconfig"; sourceTree = "<group>"; };
-		A90E26F526F2939B002F0615 /* ViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewModel.swift; sourceTree = "<group>"; };
 		A90E26F726F2A052002F0615 /* model.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = model.swift; sourceTree = "<group>"; };
 		A90E26FA26F2AB9B002F0615 /* NetworkGet.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkGet.swift; sourceTree = "<group>"; };
 		A93593FA26F2501400FAC9EE /* tableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = tableViewController.swift; sourceTree = "<group>"; };
@@ -79,20 +77,12 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
-		A90E26F926F2AB81002F0615 /* Services */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Services;
-			sourceTree = "<group>";
-		};
 		A93593F626F24FA800FAC9EE /* New Group */ = {
 			isa = PBXGroup;
 			children = (
 				A95B505226F3A33900CB9629 /* DetailView */,
 				A9EE368926F31CDC005FE7A1 /* Main */,
 				A93593F926F24FDE00FAC9EE /* View */,
-				A93593F826F24FD700FAC9EE /* ViewModel */,
 				A93593F726F24FD100FAC9EE /* Model */,
 			);
 			path = "New Group";
@@ -105,14 +95,6 @@
 				A90E26F726F2A052002F0615 /* model.swift */,
 			);
 			path = Model;
-			sourceTree = "<group>";
-		};
-		A93593F826F24FD700FAC9EE /* ViewModel */ = {
-			isa = PBXGroup;
-			children = (
-				A90E26F526F2939B002F0615 /* ViewModel.swift */,
-			);
-			path = ViewModel;
 			sourceTree = "<group>";
 		};
 		A93593F926F24FDE00FAC9EE /* View */ = {
@@ -178,7 +160,6 @@
 		FA76151425A16C1000A21105 /* Application */ = {
 			isa = PBXGroup;
 			children = (
-				A90E26F926F2AB81002F0615 /* Services */,
 				A93593F626F24FA800FAC9EE /* New Group */,
 				FA76151525A16C1600A21105 /* Base */,
 			);
@@ -313,7 +294,6 @@
 				FA76150425A0CDB600A21105 /* BaseViewController.swift in Sources */,
 				FA76150025A0CDB600A21105 /* AppDelegate.swift in Sources */,
 				FA76150225A0CDB600A21105 /* SceneDelegate.swift in Sources */,
-				A90E26F626F2939B002F0615 /* ViewModel.swift in Sources */,
 				A90E26FB26F2AB9B002F0615 /* NetworkGet.swift in Sources */,
 				A9EE369026F3222B005FE7A1 /* CustomCellTableViewCell.swift in Sources */,
 				A90E26F826F2A052002F0615 /* model.swift in Sources */,

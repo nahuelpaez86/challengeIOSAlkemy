@@ -8,28 +8,6 @@
 import Foundation
 import Alamofire
 
-
-//enum NetWorkClient {
-//    enum NetWorkingError: Error {
-//        case parsingError
-//    }
-//
-//    static func getUsers(completion: @escaping (Result<[Movie], Error>)->Void) {
-//        let request = AF.request("https://api.themoviedb.org/3/movie/popular?api_key=e92bd2006a37916787ee8e41cf61153a&language=en-US&page=1", method: HTTPMethod.get)
-//        request.responseData{ (response : AFDataResponse<Data>) in
-//            guard let data = response.data else { completion(.failure(NetWorkingError.parsingError))
-//                return
-//            }
-//
-//            let decoder = JSONDecoder()
-//            let movies = try? decoder.decode([Movie].self, from: data)
-//
-//            completion(.success(movies ?? [] ))
-//
-//
-//        }
-//    }
-//}
 final class ApiGet {
     static let baseUrl = "https://api.themoviedb.org/3/movie/popular?api_key=e92bd2006a37916787ee8e41cf61153a"
     

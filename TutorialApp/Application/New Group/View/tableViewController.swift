@@ -13,7 +13,7 @@ class tableViewController: UIViewController {
     // MARK:- View
     @IBOutlet weak var tableView: UITableView!
     
-    var viewModel = ViewModelMovies()
+   
     // MARK: - Attributes
     var movies: [Movie] = []
     var pageNumber = 1
