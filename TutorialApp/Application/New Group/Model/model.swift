@@ -11,7 +11,9 @@ import Foundation
 struct Movie: Codable {
     let title : String
     let id : Int
+    
     var poster: String
+    var backdrop: String
     let year : String
     let overview : String
     let language : String
@@ -20,6 +22,7 @@ struct Movie: Codable {
     private enum CodingKeys : String ,CodingKey {
         case title = "title"
         case id = "id"
+        case backdrop = "backdrop_path"
         case poster = "poster_path"
         case year = "release_date"
         case overview = "overview"

@@ -6,13 +6,13 @@
 //
 
 import UIKit
-
+import Kingfisher
 class DetailMovieViewController: UIViewController {
 
     // MARK:- atributtes
     var movie: Movie!
 
-    
+    let baseUrl = "https://image.tmdb.org/t/p/w300"
     //MARK:- conection UI
     
     @IBOutlet weak var titleMovie: UILabel!
@@ -21,20 +21,24 @@ class DetailMovieViewController: UIViewController {
     @IBOutlet weak var languageMovie: UILabel!
     @IBOutlet weak var overviewMovie: UILabel!
     
+    @IBOutlet weak var imageDetail: UIImageView!
     
     
     //MARK:- Cycle
     override func viewDidLoad() {
         super.viewDidLoad()
         self.configLabels(for : movie)
-       
-        
+
         // Do any additional setup after loading the view.
     }
     //MARK:- function by data
     
     func configLabels (for movie : Movie){
         let emoji = "🍿"
+        let imageUrl = movie.poster
+        if let url = URL(string: baseUrl+imageUrl){
+            imageDetail.kf.setImage(with: url)
+        }
         titleMovie.text = "\(emoji) Title : \(movie.title) "
         yearMovie.text = "\(emoji) Year : \(movie.year)"
         languageMovie.text = "\(emoji) Language :\(movie.language)"
@@ -44,12 +48,7 @@ class DetailMovieViewController: UIViewController {
     
     
     
-//MARK:- action button
-    @IBAction func backButton(_ sender: Any) {
-        let vc = tableViewController(nibName: "tableViewController", bundle: nil)
-        self.present(vc, animated: true)
-    }
-   
+
 
 }
 

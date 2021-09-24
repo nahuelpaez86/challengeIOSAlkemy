@@ -6,19 +6,41 @@
 //
 
 import UIKit
+import Kingfisher
 
-class CustomCellTableViewCell: UITableViewCell {
+class CustomCellTableViewCell: UITableViewCell{
 
+    let baseUrl = "https://image.tmdb.org/t/p/w300"
+    var data:Movie!
+    var viewModel = FavortiesViewModel()
+    
     // MARK:- labels
     @IBOutlet weak var titleMovie: UILabel!
-    @IBOutlet weak var subtitleMovie: UILabel!
+    @IBOutlet weak var posterImg: UIImageView!
     
-    
-    //MARK:- config
-    func config ( for movie : Movie){
-        let emoji = "🍿"
-        titleMovie.text = "\(emoji) \(movie.title)"
-        subtitleMovie.text = "Language : \(movie.language)"
+    //MARK:- life cycle
+    override func prepareForReuse() {
+        super.prepareForReuse()
+        
+        posterImg.image = nil
+        posterImg.kf.cancelDownloadTask()
+        
     }
-    
+   
+    //MARK:- config movies
+    func config ( for movie : Movie){
+        data = movie
+        titleMovie.text = movie.title
+        let imageUrl = movie.poster
+        if let url = URL(string: baseUrl+imageUrl ){
+            posterImg.kf.setImage(with:url)
+        }
+    }
+    //MARK:- config favs
+  // funcion que pasa la data al page de favs Ver!
+    @IBAction func eventFavorites(_ sender: Any) {
+        let date = data!
+        viewModel.moviesFavs.append(date)
+    }
+   
 }

@@ -10,10 +10,19 @@
 		5245236390433AF44B49CF89 /* Pods_TutorialApp.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CA78A26DB19027CE6C12315B /* Pods_TutorialApp.framework */; };
 		A90E26F826F2A052002F0615 /* model.swift in Sources */ = {isa = PBXBuildFile; fileRef = A90E26F726F2A052002F0615 /* model.swift */; };
 		A90E26FB26F2AB9B002F0615 /* NetworkGet.swift in Sources */ = {isa = PBXBuildFile; fileRef = A90E26FA26F2AB9B002F0615 /* NetworkGet.swift */; };
+		A91CF6CD26FE10D800564F20 /* FavCustomCellTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A91CF6CB26FE10D800564F20 /* FavCustomCellTableViewCell.swift */; };
+		A91CF6CE26FE10D800564F20 /* FavCustomCellTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = A91CF6CC26FE10D800564F20 /* FavCustomCellTableViewCell.xib */; };
+		A91FFC3D26FB971700BA6A86 /* ImageConverter.swift in Sources */ = {isa = PBXBuildFile; fileRef = A91FFC3C26FB971700BA6A86 /* ImageConverter.swift */; };
+		A91FFC4226FBE4CB00BA6A86 /* TabBarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A91FFC4126FBE4CB00BA6A86 /* TabBarViewController.swift */; };
+		A933AD4326F650F300DCC14B /* mainViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A933AD4226F650F300DCC14B /* mainViewModel.swift */; };
 		A93593FC26F2501400FAC9EE /* tableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A93593FA26F2501400FAC9EE /* tableViewController.swift */; };
 		A93593FD26F2501400FAC9EE /* tableViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = A93593FB26F2501400FAC9EE /* tableViewController.xib */; };
+		A93975F126FD3E920012A887 /* FavoritesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A93975EF26FD3E920012A887 /* FavoritesViewController.swift */; };
+		A93975F226FD3E920012A887 /* FavoritesViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = A93975F026FD3E920012A887 /* FavoritesViewController.xib */; };
+		A93975FC26FD4E5C0012A887 /* FavoritesViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A93975FB26FD4E5C0012A887 /* FavoritesViewModel.swift */; };
 		A95B505526F3A36600CB9629 /* DetailMovieViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A95B505326F3A36600CB9629 /* DetailMovieViewController.swift */; };
 		A95B505626F3A36600CB9629 /* DetailMovieViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = A95B505426F3A36600CB9629 /* DetailMovieViewController.xib */; };
+		A9B9FC6126F9522400837AF8 /* tableViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9B9FC6026F9522400837AF8 /* tableViewModel.swift */; };
 		A9EE368C26F31D01005FE7A1 /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9EE368A26F31D01005FE7A1 /* MainViewController.swift */; };
 		A9EE368D26F31D01005FE7A1 /* MainViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = A9EE368B26F31D01005FE7A1 /* MainViewController.xib */; };
 		A9EE369026F3222B005FE7A1 /* CustomCellTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9EE368E26F3222B005FE7A1 /* CustomCellTableViewCell.swift */; };
@@ -29,10 +38,19 @@
 		763F4B7093D8BDE65C3D51F9 /* Pods-TutorialApp.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TutorialApp.release.xcconfig"; path = "Target Support Files/Pods-TutorialApp/Pods-TutorialApp.release.xcconfig"; sourceTree = "<group>"; };
 		A90E26F726F2A052002F0615 /* model.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = model.swift; sourceTree = "<group>"; };
 		A90E26FA26F2AB9B002F0615 /* NetworkGet.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkGet.swift; sourceTree = "<group>"; };
+		A91CF6CB26FE10D800564F20 /* FavCustomCellTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavCustomCellTableViewCell.swift; sourceTree = "<group>"; };
+		A91CF6CC26FE10D800564F20 /* FavCustomCellTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = FavCustomCellTableViewCell.xib; sourceTree = "<group>"; };
+		A91FFC3C26FB971700BA6A86 /* ImageConverter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageConverter.swift; sourceTree = "<group>"; };
+		A91FFC4126FBE4CB00BA6A86 /* TabBarViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarViewController.swift; sourceTree = "<group>"; };
+		A933AD4226F650F300DCC14B /* mainViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = mainViewModel.swift; sourceTree = "<group>"; };
 		A93593FA26F2501400FAC9EE /* tableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = tableViewController.swift; sourceTree = "<group>"; };
 		A93593FB26F2501400FAC9EE /* tableViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = tableViewController.xib; sourceTree = "<group>"; };
+		A93975EF26FD3E920012A887 /* FavoritesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavoritesViewController.swift; sourceTree = "<group>"; };
+		A93975F026FD3E920012A887 /* FavoritesViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = FavoritesViewController.xib; sourceTree = "<group>"; };
+		A93975FB26FD4E5C0012A887 /* FavoritesViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavoritesViewModel.swift; sourceTree = "<group>"; };
 		A95B505326F3A36600CB9629 /* DetailMovieViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailMovieViewController.swift; sourceTree = "<group>"; };
 		A95B505426F3A36600CB9629 /* DetailMovieViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = DetailMovieViewController.xib; sourceTree = "<group>"; };
+		A9B9FC6026F9522400837AF8 /* tableViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = tableViewModel.swift; sourceTree = "<group>"; };
 		A9EE368A26F31D01005FE7A1 /* MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
 		A9EE368B26F31D01005FE7A1 /* MainViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MainViewController.xib; sourceTree = "<group>"; };
 		A9EE368E26F3222B005FE7A1 /* CustomCellTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomCellTableViewCell.swift; sourceTree = "<group>"; };
@@ -77,9 +95,40 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
+		A91FFC3B26FB961000BA6A86 /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+				A91FFC3C26FB971700BA6A86 /* ImageConverter.swift */,
+			);
+			path = Utils;
+			sourceTree = "<group>";
+		};
+		A91FFC3E26FBE3FB00BA6A86 /* TaaBar */ = {
+			isa = PBXGroup;
+			children = (
+				A91FFC4126FBE4CB00BA6A86 /* TabBarViewController.swift */,
+			);
+			path = TaaBar;
+			sourceTree = "<group>";
+		};
+		A91FFC4326FBE97800BA6A86 /* Favorites */ = {
+			isa = PBXGroup;
+			children = (
+				A93975EF26FD3E920012A887 /* FavoritesViewController.swift */,
+				A93975F026FD3E920012A887 /* FavoritesViewController.xib */,
+				A93975FB26FD4E5C0012A887 /* FavoritesViewModel.swift */,
+				A91CF6CB26FE10D800564F20 /* FavCustomCellTableViewCell.swift */,
+				A91CF6CC26FE10D800564F20 /* FavCustomCellTableViewCell.xib */,
+			);
+			path = Favorites;
+			sourceTree = "<group>";
+		};
 		A93593F626F24FA800FAC9EE /* New Group */ = {
 			isa = PBXGroup;
 			children = (
+				A91FFC4326FBE97800BA6A86 /* Favorites */,
+				A91FFC3E26FBE3FB00BA6A86 /* TaaBar */,
+				A91FFC3B26FB961000BA6A86 /* Utils */,
 				A95B505226F3A33900CB9629 /* DetailView */,
 				A9EE368926F31CDC005FE7A1 /* Main */,
 				A93593F926F24FDE00FAC9EE /* View */,
@@ -104,6 +153,7 @@
 				A93593FB26F2501400FAC9EE /* tableViewController.xib */,
 				A9EE368E26F3222B005FE7A1 /* CustomCellTableViewCell.swift */,
 				A9EE368F26F3222B005FE7A1 /* CustomCellTableViewCell.xib */,
+				A9B9FC6026F9522400837AF8 /* tableViewModel.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -122,6 +172,7 @@
 			children = (
 				A9EE368A26F31D01005FE7A1 /* MainViewController.swift */,
 				A9EE368B26F31D01005FE7A1 /* MainViewController.xib */,
+				A933AD4226F650F300DCC14B /* mainViewModel.swift */,
 			);
 			path = Main;
 			sourceTree = "<group>";
@@ -235,8 +286,10 @@
 			files = (
 				FA76150C25A0CDB800A21105 /* LaunchScreen.storyboard in Resources */,
 				A93593FD26F2501400FAC9EE /* tableViewController.xib in Resources */,
+				A91CF6CE26FE10D800564F20 /* FavCustomCellTableViewCell.xib in Resources */,
 				A95B505626F3A36600CB9629 /* DetailMovieViewController.xib in Resources */,
 				A9EE369126F3222B005FE7A1 /* CustomCellTableViewCell.xib in Resources */,
+				A93975F226FD3E920012A887 /* FavoritesViewController.xib in Resources */,
 				FA76150925A0CDB800A21105 /* Assets.xcassets in Resources */,
 				A9EE368D26F31D01005FE7A1 /* MainViewController.xib in Resources */,
 			);
@@ -291,13 +344,20 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A93975FC26FD4E5C0012A887 /* FavoritesViewModel.swift in Sources */,
 				FA76150425A0CDB600A21105 /* BaseViewController.swift in Sources */,
 				FA76150025A0CDB600A21105 /* AppDelegate.swift in Sources */,
+				A93975F126FD3E920012A887 /* FavoritesViewController.swift in Sources */,
+				A91FFC3D26FB971700BA6A86 /* ImageConverter.swift in Sources */,
 				FA76150225A0CDB600A21105 /* SceneDelegate.swift in Sources */,
 				A90E26FB26F2AB9B002F0615 /* NetworkGet.swift in Sources */,
 				A9EE369026F3222B005FE7A1 /* CustomCellTableViewCell.swift in Sources */,
+				A933AD4326F650F300DCC14B /* mainViewModel.swift in Sources */,
 				A90E26F826F2A052002F0615 /* model.swift in Sources */,
+				A9B9FC6126F9522400837AF8 /* tableViewModel.swift in Sources */,
 				A93593FC26F2501400FAC9EE /* tableViewController.swift in Sources */,
+				A91CF6CD26FE10D800564F20 /* FavCustomCellTableViewCell.swift in Sources */,
+				A91FFC4226FBE4CB00BA6A86 /* TabBarViewController.swift in Sources */,
 				A95B505526F3A36600CB9629 /* DetailMovieViewController.swift in Sources */,
 				A9EE368C26F31D01005FE7A1 /* MainViewController.swift in Sources */,
 			);
